@@ -8,14 +8,9 @@ var box1,box2,box3,box4,box5,ground;
 var pig1,pig2,log,log2,log3,log4,bird;
 var backgroundimg,platform,slingshot;
 
-
-
 function preload () {
 
   backgroundimg = loadImage("sprites/bg.png");
-
-
-
 }
 
 function setup() {
@@ -38,10 +33,6 @@ function setup() {
  bird = new Bird(100,100);
  platform = new Ground(150,305,300,170);
  slingshot = new Slingshot(bird.body,{x:200,y:50});
-
- 
-
- 
 }
 
 function draw() {
@@ -70,8 +61,6 @@ function draw() {
 function mouseDragged () {
 
 Matter.Body.setPosition(bird.body,{x:mouseX,y:mouseY});
-
-
 }
 
 function mouseReleased (){
